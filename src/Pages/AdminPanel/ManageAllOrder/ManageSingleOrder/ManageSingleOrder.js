@@ -8,20 +8,20 @@ const ManageSingleOrder = (props) => {
     const [updateOrder, setUpdateOrder] = useState({});
 
     useEffect(() => {
-        const url = `https://evening-shore-57198.herokuapp.com//order/${_id}`
+        const url = `https://evening-shore-57198.herokuapp.com/order/${_id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setUpdateOrder(data))
     }, []);
 
     useEffect(() => {
-        fetch('https://evening-shore-57198.herokuapp.com//orders')
+        fetch('https://evening-shore-57198.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
 
     const handleUpdateStatus = (_id) => {
-        axios.put(`https://evening-shore-57198.herokuapp.com//order/${_id}`, {
+        axios.put(`https://evening-shore-57198.herokuapp.com/order/${_id}`, {
             orderStatus: 'Shipped'
         })
             .then(response => {
@@ -35,7 +35,7 @@ const ManageSingleOrder = (props) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to Delete? ');
         if (proceed) {
-            const url = `https://evening-shore-57198.herokuapp.com//orders/${id}`;
+            const url = `https://evening-shore-57198.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

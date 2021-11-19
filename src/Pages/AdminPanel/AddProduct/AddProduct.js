@@ -34,7 +34,7 @@ const AddProduct = () => {
         }
         console.log(data)
         if (productName !== '' && productImg !== '' && productDescription !== '' && productPrice !== '') {
-            axios.post('https://evening-shore-57198.herokuapp.com//addProduct', data)
+            axios.post('https://evening-shore-57198.herokuapp.com/addProduct', data)
                 .then(res => {
                     if (res.data.insertedId) {
                         alert("Insertion was successful. See your Product History in All Order Section");

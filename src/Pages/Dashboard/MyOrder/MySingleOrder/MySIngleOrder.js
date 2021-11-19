@@ -14,7 +14,7 @@ const MySIngleOrder = (props) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to Delete? ');
         if (proceed) {
-            const url = `https://evening-shore-57198.herokuapp.com//orders/${id}`;
+            const url = `https://evening-shore-57198.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

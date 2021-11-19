@@ -29,7 +29,7 @@ const Ratings = () => {
     }
 
     useEffect(() => {
-        fetch(`https://evening-shore-57198.herokuapp.com//users/${emailValue}`)
+        fetch(`https://evening-shore-57198.herokuapp.com/users/${emailValue}`)
             .then(res => res.json())
             .then(data => setUserInfo(data))
     }, []);
@@ -44,7 +44,7 @@ const Ratings = () => {
         }
 
         if (customerComment !== '') {
-            axios.post('https://evening-shore-57198.herokuapp.com//ratings', data)
+            axios.post('https://evening-shore-57198.herokuapp.com/ratings', data)
                 .then(res => {
                     if (res.data.insertedId) {
                         alert("Review is recorded");
