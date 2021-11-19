@@ -5,7 +5,7 @@ import SingleCustomerReview from './SingleCustomerReview/SingleCustomerReview';
 const CustomerReview = () => {
     const [review, setReview] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/rating')
+        fetch('https://evening-shore-57198.herokuapp.com//rating')
             .then(res => res.json())
             .then(data => setReview(data))
     }, [])

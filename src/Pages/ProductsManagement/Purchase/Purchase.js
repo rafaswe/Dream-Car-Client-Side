@@ -17,13 +17,13 @@ const Purchase = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${_id}`)
+        fetch(`https://evening-shore-57198.herokuapp.com//products/${_id}`)
             .then(res => res.json())
             .then(data => setPurchesProduct(data))
     }, [])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${emailValue}`)
+        fetch(`https://evening-shore-57198.herokuapp.com//users/${emailValue}`)
             .then(res => res.json())
             .then(data => setUserInfo(data))
     }, []);
@@ -51,7 +51,7 @@ const Purchase = () => {
             orderStatus: purchesProduct.status
         }
         if (customerAdress !== '' && customerPhone !== '') {
-            axios.post('http://localhost:5000/order', data)
+            axios.post('https://evening-shore-57198.herokuapp.com//order', data)
                 .then(res => {
                     if (res.data.insertedId) {
                         history.push('/payBill');

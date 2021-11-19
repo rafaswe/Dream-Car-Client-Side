@@ -7,7 +7,7 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [orders, setOrder] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://evening-shore-57198.herokuapp.com//orders')
             .then(res => res.json())
             .then(data => setOrder(data));
     }, []);

@@ -8,7 +8,7 @@ const ManageSingleProduct = (props) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to Delete? ');
         if (proceed) {
-            const url = `http://localhost:5000/products/${id}`;
+            const url = `https://evening-shore-57198.herokuapp.com//products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
