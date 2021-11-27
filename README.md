@@ -1,10 +1,11 @@
 # Dream Car
 This app is created by React, react route,react bootstrap, firebase node js and mongodb. It helps to find out your dream car with cheaper price.
 
-* This App Helps to buy Cars in online 
-* Can easily find best model car in one place
-* Able to see and reject own orders
-* Find best Cars at cheaper rate 
+* Here users can find their dream car in one place at a cheaper rate.
+* Users can purchase cars or cancel their orders if and only if they are
+authenticated.
+* Admin can manage all products(Cars) and user’s orders.
+* Admin can add new admin and product’s (Cars) information.
 * Overall it can create a quality in Car buying environment <br/>
 ============================================================== <br/>
 ## This project was developed with react,react-bootstrap,firebase
