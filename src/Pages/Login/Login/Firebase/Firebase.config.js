@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAuKbsVkGxE_ty5wTEyrhnEhQReUfepBGo",
-    authDomain: "dream-car-ae04f.firebaseapp.com",
-    projectId: "dream-car-ae04f",
-    storageBucket: "dream-car-ae04f.appspot.com",
-    messagingSenderId: "179504721189",
-    appId: "1:179504721189:web:04b8b56cf41608b964becc"
+    apiKey: "Use your own",
+    authDomain: "Use your own",
+    projectId: "Use your own",
+    storageBucket: "Use your own",
+    messagingSenderId: "Use your own",
+    appId: "Use your own"
 };
 export default firebaseConfig;
